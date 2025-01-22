@@ -1,5 +1,5 @@
-provider aws{
-  region = "eu-west-1" 
+provider "aws" {
+  region = "eu-west-1"
 }
 
 resource "aws_s3_bucket" "website_bucket" {
@@ -23,6 +23,6 @@ resource "aws_s3_bucket_website_configuration" "website_config" {
   }
 }
 output "bucket_website_url" {
-  value = aws_s3_bucket.website_bucket.website_endpoint
+  value       = aws_s3_bucket.website_bucket.website_endpoint
   description = "The URL of the static website hosted on S3"
 }
