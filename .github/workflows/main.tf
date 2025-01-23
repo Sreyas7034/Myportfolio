@@ -1,5 +1,5 @@
 name: Terraform Plan and Apply
-run_name:   Building main
+
 on:
   push: # Allow manual trigger of the workflow
 
