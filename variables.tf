@@ -6,6 +6,7 @@ variable "bucket_name" {
 variable "github_token" {
   description = "The GitHub personal access token"
   type        = string
+  default     = "Default repoditory description"
 }
 
 variable "repo_name" {
