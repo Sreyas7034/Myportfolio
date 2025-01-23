@@ -2,8 +2,12 @@ provider "aws" {
   region = "eu-west-1"
 }
 
+locals {
+  bucket_name = sreyas321
+}
+
 resource "aws_s3_bucket" "website_bucket" {
-  bucket = var.bucket_name
+  bucket = local.bucket_name
 
   # Enable static website hosting
   website {
