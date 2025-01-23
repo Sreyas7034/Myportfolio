@@ -1,7 +1,7 @@
 name: Terraform Plan and Apply
 
 on:
-  workflow_dispatch: # Allow manual trigger of the workflow
+  push: # Allow manual trigger of the workflow
 
 jobs:
   terraform-deploy:
