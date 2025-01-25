@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 locals {
-  bucket_name = "sreyas111"
+  bucket_name = "sreyasxyz"
 }
 
 resource "aws_s3_bucket" "website_bucket" {
